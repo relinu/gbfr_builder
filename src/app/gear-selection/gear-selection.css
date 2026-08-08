@@ -1,0 +1,29 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.layout div {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout .left-col {
+    width: 25%;
+}
+
+.layout .center-col {
+    flex: 1;
+    max-width: 750px;
+}
+
+.section-header {
+    font: var(--mat-sys-headline-small);
+    letter-spacing: var(--mat-sys-headline-small-tracking);
+    margin-bottom: 0.25rem;
+}
+
+.section-header:not(:first-child) {
+    margin-top: 1rem;
+}

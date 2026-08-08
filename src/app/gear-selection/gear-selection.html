@@ -1,0 +1,35 @@
+<div class="layout">
+    <div class="left-col">
+        <span class="section-header">Weapons</span>
+        <mat-nav-list>
+            <a mat-list-item (click)="selection.set(['weapon'])" [activated]="isSelected(['weapon'])">
+                <div matListItemIcon></div>
+                <div matListItemTitle>{{ getWeaponName() }}</div>
+            </a>
+        </mat-nav-list>
+
+        <span class="section-header">Sigils</span>
+        <mat-nav-list>
+            @for(id of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; track id) {
+            <a mat-list-item (click)="selection.set(['sigil', id])" [activated]="isSelected(['sigil', id])">
+                @let sigil = getSigil(id);
+                <div matListItemIcon>{{ sigil?.main != undefined ? '✦' : '' }}</div>
+                <div matListItemTitle>{{ getTraitName(sigil?.main) }}</div>
+                <div matListItemMeta>{{ getTraitName(sigil?.sub) }}</div>
+            </a>
+            }
+        </mat-nav-list>
+    </div>
+
+    <div class="center-col">
+        @let current = selection();
+        @switch (current[0]) {
+        @case ('weapon'){
+        <app-weapon-info></app-weapon-info>
+        }
+        @case ('sigil'){
+        <app-sigil-info [sigilId]="current[1]"></app-sigil-info>
+        }
+        }
+    </div>
+</div>

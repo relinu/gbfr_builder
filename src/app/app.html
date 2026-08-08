@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <span>GBFR Builder</span>
+
+  <span class="spacer"></span>
+
+  <a mat-button routerLink="characters">Character {{ getCharacterName() }}</a>
+  <a mat-button routerLink="">Overview</a>
+  <a mat-button routerLink="gear">Gear</a>
+  <a mat-button routerLink="skills">Skills</a>
+  <a mat-button routerLink="traits">Mastery Traits</a>
+</mat-toolbar>
+
+<div class="content">
+  <router-outlet />
+</div>
+
+<div class="footer">
+  <span>Data based on <a href="https://relink.gbf.wiki/">Granblue Fantasy Relink Wiki</a></span>
+</div>

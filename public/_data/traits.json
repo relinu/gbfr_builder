@@ -1,0 +1,1001 @@
+[
+    {
+        "id": "attack_power",
+        "name": "Attack Power",
+        "description": "Boosts attack power.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "ATK +4",
+        "maxValue": "ATK +2000"
+    },
+    {
+        "id": "health",
+        "name": "Health",
+        "description": "Boosts base health.",
+        "minLvl": "1",
+        "maxLvl": "50",
+        "minValue": "HP +200",
+        "maxValue": "HP +10000"
+    },
+    {
+        "id": "critical_hit_rate",
+        "name": "Critical Hit Rate",
+        "description": "Boosts critical hit rate.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "Critical Hit Rate +5%",
+        "maxValue": "Critical Hit Rate +50%"
+    },
+    {
+        "id": "stun_power",
+        "name": "Stun Power",
+        "description": "Boosts stun power.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "Stun Power +5",
+        "maxValue": "Stun Power +100"
+    },
+    {
+        "id": "enmity",
+        "name": "Enmity",
+        "description": "Boosts attack based on how low your health is.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Boosts ATK by a max of 10%",
+        "maxValue": "Boosts ATK by a max of 100%"
+    },
+    {
+        "id": "celestial_nyx",
+        "name": "Celestial Nyx",
+        "description": "Boosts attack attack power and damage cap when health is below a certain threshold.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "While at 25% HP or less:ATK +16% / DMG Cap +50%",
+        "maxValue": "While at 25% HP or less:ATK +30% / DMG Cap +120%"
+    },
+    {
+        "id": "stamina",
+        "name": "Stamina",
+        "description": "Boosts attack based on how high your health is.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Boosts ATK by a max of +8% (At 100% HP)Boosts ATK by at least +1.2% (At 25% HP)",
+        "maxValue": "Boosts ATK by a max of +70% (At 100% HP)Boosts ATK by at least +10.5% (At 25% HP)"
+    },
+    {
+        "id": "celestial_lumen",
+        "name": "Celestial Lumen",
+        "description": "Boosts attack power and damage cap when health is above a certain threshold.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "While at 75% HP or more:ATK +6% / DMG Cap +2%",
+        "maxValue": "While at 75% HP or more:ATK +20% / DMG Cap +70%"
+    },
+    {
+        "id": "critical_hit_dmg",
+        "name": "Critical Hit DMG",
+        "description": "Boosts damage dealt by critical hits.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Dealt +5%",
+        "maxValue": "DMG Dealt +50%"
+    },
+    {
+        "id": "weak_point_dmg",
+        "name": "Weak Point DMG",
+        "description": "Boosts damage against weak points and attacks from behind.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "DMG Dealt to weak points +4%Back Attack DMG +4%",
+        "maxValue": "DMG Dealt to weak points +70%Back Attack DMG +70%"
+    },
+    {
+        "id": "tyranny",
+        "name": "Tyranny",
+        "description": "Reduces maximum base health in exchange for a boost to attack.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "ATK +5%Max HP -20%",
+        "maxValue": "ATK +50%Max HP -20%"
+    },
+    {
+        "id": "celestial_terra",
+        "name": "Celestial Terra",
+        "description": "Reduces maximum base health in exchange for a boost to damage cap.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "DMG Cap +1%Max HP -30%",
+        "maxValue": "DMG Cap +70%Max HP -30%"
+    },
+    {
+        "id": "life_on_the_line",
+        "name": "Life on the Line",
+        "description": "Boosts your attack power, but healing from allies won't restore your health.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "ATK +5%Healing from allies has no effect",
+        "maxValue": "ATK +50%Healing from allies has no effect"
+    },
+    {
+        "id": "celestial_ventus",
+        "name": "Celestial Ventus",
+        "description": "Deal more damage to foes, but healing from allies won't restore your health.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "DMG Dealt +1%Healing from allies has no effect",
+        "maxValue": "DMG Dealt +10%Healing from allies has no effect"
+    },
+    {
+        "id": "dmg_cap",
+        "name": "DMG Cap",
+        "description": "Raises the damage limit of attacks.",
+        "minLvl": "1",
+        "maxLvl": "65",
+        "minValue": "[Attack] / [Unique Attack] DMG cap +3%Skill DMG cap +3%SBA DMG cap +3%",
+        "maxValue": "[Attack] / [Unique Attack] DMG cap +250%Skill DMG cap +250%SBA DMG cap +250%"
+    },
+    {
+        "id": "skilled_assault",
+        "name": "Skilled Assault",
+        "description": "Boosts the power of damage skills.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Dealt +10%",
+        "maxValue": "DMG Dealt +100%"
+    },
+    {
+        "id": "linked_together",
+        "name": "Linked Together",
+        "description": "Boosts link attacks, Skybound Arts, and chain bursts.Also boosts the amount of link level gained.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Link Lvl Gain +5%Chain Burst DMG +2%–5%Link Attack DMG +10% / SBA DMG +5%",
+        "maxValue": "Link Lvl Gain +50%Chain Burst DMG +20%–50%Link Attack DMG +100% / SBA DMG +50%"
+    },
+    {
+        "id": "combo_booster",
+        "name": "Combo Booster",
+        "description": "Gradually boosts damage of each successive hit.Effect resets if the next hit isn't made in time.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Boosts DMG Dealt by a max of +10%",
+        "maxValue": "Boosts DMG Dealt by a max of +100%"
+    },
+    {
+        "id": "supplementary_dmg",
+        "name": "Supplementary DMG",
+        "description": "Grants a certain chance for normal attacks and damage skills to deal supplementary damage.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "12% chance to trigger Supplementary DMG",
+        "maxValue": "100% chance to trigger Supplementary DMG"
+    },
+    {
+        "id": "berserker_echo",
+        "name": "Berserker Echo",
+        "description": "This Supplementary DMG effect has a unique trigger rate and increases with higher base ATK.When multiple Supplementary DMG effects trigger, damage is displayed as a sum.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "Deal 20% Supplementary DMG as follows:100% chance to trigger when ATK is 25000 or more0% chance to trigger when ATK is 20000 or less",
+        "maxValue": "Deal 20% Supplementary DMG as follows:100% chance to trigger when ATK is 25000 or more0% chance to trigger when ATK is 20000 or less"
+    },
+    {
+        "id": "spartan_echo",
+        "name": "Spartan Echo",
+        "description": "This Supplementary DMG effect has a unique trigger rate and increases with higher base HP.When multiple Supplementary DMG effects trigger, damage is displayed as a sum.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "Deal 20% Supplementary DMG as follows:100% chance to trigger when HP is 80000 or more0% chance to trigger when HP is 50000 or less",
+        "maxValue": "Deal 20% Supplementary DMG as follows:100% chance to trigger when HP is 80000 or more0% chance to trigger when HP is 50000 or less"
+    },
+    {
+        "id": "combo_finisher_dmg",
+        "name": "Combo Finisher DMG",
+        "description": "Boosts the power of combo finishers.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Dealt +5%",
+        "maxValue": "DMG Dealt +50%"
+    },
+    {
+        "id": "charged_attack_dmg",
+        "name": "Charged Attack DMG",
+        "description": "Boosts the power of charged attacks.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Dealt +5%",
+        "maxValue": "DMG Dealt +50%"
+    },
+    {
+        "id": "lucky_charge",
+        "name": "Lucky Charge",
+        "description": "Boosts the critical hit rate of charged attacks.",
+        "minLvl": "1",
+        "maxLvl": "20",
+        "minValue": "Critical Hit Rate +6%",
+        "maxValue": "Critical Hit Rate +60%"
+    },
+    {
+        "id": "quick_charge",
+        "name": "Quick Charge",
+        "description": "Charged attacks charge faster. Boosts attack power.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Charge Time -3%ATK +2%",
+        "maxValue": "Charge Time -30%ATK +20%"
+    },
+    {
+        "id": "concentrated_fire",
+        "name": "Concentrated Fire",
+        "description": "Boosts the power of ranged attacks.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Dealt +5%",
+        "maxValue": "DMG Dealt +50%"
+    },
+    {
+        "id": "throw_dmg",
+        "name": "Throw DMG",
+        "description": "Boosts the power of thrown objects.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Dealt +10%",
+        "maxValue": "DMG Dealt +100%"
+    },
+    {
+        "id": "injury_to_insult",
+        "name": "Injury to Insult",
+        "description": "Deal more damage to foes inflicted with status ailments.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Dealt +5%",
+        "maxValue": "DMG Dealt +30%"
+    },
+    {
+        "id": "overdrive_assassin",
+        "name": "Overdrive Assassin",
+        "description": "Deal more damage to foes in Overdrive.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Dealt +10%",
+        "maxValue": "DMG Dealt +100%"
+    },
+    {
+        "id": "celestial_incendo",
+        "name": "Celestial Incendo",
+        "description": "Boosts damage cap against a foe in Overdrive.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "DMG Cap +10%",
+        "maxValue": "DMG Cap +50%"
+    },
+    {
+        "id": "break_assassin",
+        "name": "Break Assassin",
+        "description": "Deal more damage to foes in Break.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Dealt +20%",
+        "maxValue": "DMG Dealt +200%"
+    },
+    {
+        "id": "celestial_aqua",
+        "name": "Celestial Aqua",
+        "description": "Boosts the damage dealt to foes in Break, including link time attacks and chain bursts.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "DMG Dealt +1%",
+        "maxValue": "DMG Dealt +15%"
+    },
+    {
+        "id": "fatebreaker",
+        "name": "Fatebreaker",
+        "description": "Boosts attack, defense, and damage cap when participating in Fatebreaker-grade quests.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "ATK +10% / DEF +1% / DMG Cap +10%",
+        "maxValue": "ATK +50% / DEF +5% / DMG Cap +50%"
+    },
+    {
+        "id": "head_start",
+        "name": "Head Start",
+        "description": "Boosts attack power for the first 3 minutes of a quest.Applies to quests and fate episodes only.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "ATK +16%",
+        "maxValue": "ATK +60%"
+    },
+    {
+        "id": "power_hungry",
+        "name": "Power Hungry",
+        "description": "Reduces health at the start of battle in exchange for a big boost to attack power.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Lose 50% of max HPATK +1%",
+        "maxValue": "Lose 50% of max HPATK +30%"
+    },
+    {
+        "id": "guard_payback",
+        "name": "Guard Payback",
+        "description": "Boosts the amount of stun dealt back at foes after a perfect guard and temporarily boosts attack power.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Stun Gauge Fill +10%ATK +5%",
+        "maxValue": "Stun Gauge Fill +100%ATK +50%"
+    },
+    {
+        "id": "dodge_payback",
+        "name": "Dodge Payback",
+        "description": "Extends Invincibility after a perfect dodge and temporarily boosts attack power.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Invincibility +1 sec.ATK +5%",
+        "maxValue": "Invincibility +3 sec.ATK +30%"
+    },
+    {
+        "id": "super_ultimate_perfect_dodge",
+        "name": "Super Ultimate Perfect Dodge",
+        "description": "Shortens perfect dodge timing window but greatly boosts DMG Cap during Invincibility from a perfect dodge (player only).Doesn't stack with Flight over Fight or Improved Dodge.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "DMG Cap +50% during Invincibility from a perfect dodge",
+        "maxValue": "DMG Cap +50% during Invincibility from a perfect dodge"
+    },
+    {
+        "id": "less_is_more",
+        "name": "Less Is More",
+        "description": "Boosts attack power the less skills are assigned.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "ATK +1% when 3 skills assigned, ATK +2% when 2 skills assignedATK +3% when 1 skill assigned, ATK +4% when 0 skills assigned",
+        "maxValue": "ATK +30% when 3 skills assigned, ATK +60% when 2 skills assignedATK +90% when 1 skill assigned, ATK +120% when 0 skills assigned"
+    },
+    {
+        "id": "berserker",
+        "name": "Berserker",
+        "description": "Boosts attack power but disables dodging and guarding.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "ATK +36%",
+        "maxValue": "ATK +80%"
+    },
+    {
+        "id": "glass_cannon",
+        "name": "Glass Cannon",
+        "description": "Boosts attack power and damage cap, but every hit taken inflicts you with Dizzy.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "ATK +2%DMG Cap +2%",
+        "maxValue": "ATK +50%DMG Cap +50%"
+    },
+    {
+        "id": "roll_of_the_die",
+        "name": "Roll of the Die",
+        "description": "Grants a chance for normal attacks to deal 1x-4x damage.The 4x multiplier ignores damage cap for a max of 999,999 damage. Otherwise attacks only deal 1 damage.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "Chance to amplify DMG",
+        "maxValue": "Chance to amplify DMG"
+    },
+    {
+        "id": "war_elemental",
+        "name": "War Elemental",
+        "description": "All attacks count as the superior element.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "All attacks count as the superior element",
+        "maxValue": "All attacks count as the superior element"
+    },
+    {
+        "id": "aegis",
+        "name": "Aegis",
+        "description": "Raises maximum health in proportion to your current maximum health.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "HP +5%",
+        "maxValue": "HP +80%"
+    },
+    {
+        "id": "greater_aegis",
+        "name": "Greater Aegis",
+        "description": "Greatly raises maximum health in proportion to your current maximum health.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Max HP +10%",
+        "maxValue": "Max HP +80%"
+    },
+    {
+        "id": "garrison",
+        "name": "Garrison",
+        "description": "Boosts defense based on how low your health is.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "Boosts DEF by a max of +4%",
+        "maxValue": "Boosts DEF by a max of +70%"
+    },
+    {
+        "id": "stronghold",
+        "name": "Stronghold",
+        "description": "Boosts defense the higher your remaining health is.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Boosts DEF by a max of +5% (At 100% HP)Boosts DEF by at least +0.7% (At 25% HP)",
+        "maxValue": "Boosts DEF by a max of +30% (At 100% HP)Boosts DEF by at least +4.5% (At 25% HP)"
+    },
+    {
+        "id": "steel_nerves",
+        "name": "Steel Nerves",
+        "description": "Take less damage while Stout Heart is active.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "DMG Taken -1%",
+        "maxValue": "DMG Taken -15%"
+    },
+    {
+        "id": "improved_guard",
+        "name": "Improved Guard",
+        "description": "Makes your guard harder to break.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Guard Break Resistance +5%",
+        "maxValue": "Guard Break Resistance +50%"
+    },
+    {
+        "id": "improved_dodge",
+        "name": "Improved Dodge",
+        "description": "Extends the window for foe attacks to miss during a dodge.Allows you to perform more dodges in a row.",
+        "minLvl": "11",
+        "maxLvl": "15",
+        "minValue": "Dodge Count +1",
+        "maxValue": "Dodge Count +4Enhanced dodging ability"
+    },
+    {
+        "id": "precise_resilience",
+        "name": "Precise Resilience",
+        "description": "Temporarily boosts defense and restores a small bit of health after a perfect guard.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DEF +5%Recover 3.5% of max HP",
+        "maxValue": "DEF +30%Recover 15% of max HP"
+    },
+    {
+        "id": "nimble_defense",
+        "name": "Nimble Defense",
+        "description": "Extends Invincibility after a perfect dodge.Temporarily boosts defense and restores a small bit of health.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Invincibility +1 sec.DEF +3% / Recover 1.5% of max HP",
+        "maxValue": "Invincibility +3 sec.DEF +20% / Recover 10% of max HP"
+    },
+    {
+        "id": "untouchable",
+        "name": "Untouchable",
+        "description": "Extends the range of ground dodges.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "Dodge farther while on the ground",
+        "maxValue": "Dodge farther while on the ground"
+    },
+    {
+        "id": "flight_over_fight",
+        "name": "Flight over Fight",
+        "description": "[Dodge Button] dodges are always perfect dodges but inflicts DMG↓ to you upon triggering.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "DMG↓ (50%) for 6 sec.",
+        "maxValue": "DMG↓ (50%) for 6 sec."
+    },
+    {
+        "id": "firm_stance",
+        "name": "Firm Stance",
+        "description": "Reduces the effect of being pulled in or repelled by physical forces.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Movement Restriction -10%",
+        "maxValue": "Movement Penalty Immunity"
+    },
+    {
+        "id": "dizzy_resistance",
+        "name": "Dizzy Resistance",
+        "description": "Recover faster from Dizzy.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "Dizzy Immunity"
+    },
+    {
+        "id": "glaciate_resistance",
+        "name": "Glaciate Resistance",
+        "description": "Recover faster from Frostbite and Glaciate.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "Frostbite/Glaciate Immunity"
+    },
+    {
+        "id": "held_under_resistance",
+        "name": "Held Under Resistance",
+        "description": "Recover faster from Held Under.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "Held Under Immunity"
+    },
+    {
+        "id": "sandtomb_resistance",
+        "name": "Sandtomb Resistance",
+        "description": "Recover faster from Sandtomb.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "Sandtomb Immunity"
+    },
+    {
+        "id": "poison_resistance",
+        "name": "Poison Resistance",
+        "description": "Reduces the amount of damage inflicted by Poison.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Taken -10%",
+        "maxValue": "Poison Immunity"
+    },
+    {
+        "id": "slow_resistance",
+        "name": "Slow Resistance",
+        "description": "Recover faster from Slow.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "Slow Immunity"
+    },
+    {
+        "id": "burn_resistance",
+        "name": "Burn Resistance",
+        "description": "Reduces the amount of damage inflicted by Burn.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Taken -10%",
+        "maxValue": "Burn Immunity"
+    },
+    {
+        "id": "paralysis_resistance",
+        "name": "Paralysis Resistance",
+        "description": "Recover faster from Paralysis.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "Slow Immunity"
+    },
+    {
+        "id": "blight_resistance",
+        "name": "Blight Resistance",
+        "description": "Reduces the amount of damage inflicted by Burn.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "DMG Taken -10%",
+        "maxValue": "Blight Immunity"
+    },
+    {
+        "id": "skill_sealed_resistance",
+        "name": "Skill Sealed Resistance",
+        "description": "Recover faster from Skill Sealed.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "Skill Sealed Immunity"
+    },
+    {
+        "id": "sba_sealed_resistance",
+        "name": "SBA Sealed Resistance",
+        "description": "Recover faster from Skill Sealed.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "SBA Sealed Immunity"
+    },
+    {
+        "id": "darkflame_resistance",
+        "name": "Darkflame Resistance",
+        "description": "Recover faster from Darkflame.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "Darkflame Immunity"
+    },
+    {
+        "id": "atk_down_resistance",
+        "name": "ATK Down Resistance",
+        "description": "Recover faster from ATK↓.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "ATK↓ Immunity"
+    },
+    {
+        "id": "def_down_resistance",
+        "name": "DEF Down Resistance",
+        "description": "Recover faster from DEF↓.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Effect Duration -10%",
+        "maxValue": "DEF↓ Immunity"
+    },
+    {
+        "id": "natural_defenses",
+        "name": "Natural Defenses",
+        "description": "Reduces the severity of all status ailments received.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "DMG Taken from Debuffs -30%Debuff Duration -30%Movement Restriction -30%",
+        "maxValue": "DMG Taken from Debuffs -30%Debuff Duration -30%Movement Restriction -30%"
+    },
+    {
+        "id": "improved_healing",
+        "name": "Improved Healing",
+        "description": "Raises the healing cap and healing amount of healing skills.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Healing Amount +5%Healing Cap +5%",
+        "maxValue": "Healing Amount +50%Healing Cap +50%"
+    },
+    {
+        "id": "regen",
+        "name": "Regen",
+        "description": "Automatically recover health over time.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "Recover 0.2% of max HP",
+        "maxValue": "Recover 5% of max HP"
+    },
+    {
+        "id": "divergence",
+        "name": "Divergence",
+        "description": "Automatically recover health over time.Also grants a certain chance to instantly recover from 1 debuff.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "Recover 0.6% of max HP over time1% chance to instantly recover from 1 debuff",
+        "maxValue": "Recover 2% of max HP over time15% chance to instantly recover from 1 debuff"
+    },
+    {
+        "id": "drain",
+        "name": "Drain",
+        "description": "Recover health based on the damage dealt to a foe.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "Recover 0.2% of DMG dealt as HP",
+        "maxValue": "Recover 5% of DMG dealt as HP"
+    },
+    {
+        "id": "quick_cooldown",
+        "name": "Quick Cooldown",
+        "description": "Shortens skill cooldowns.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "Skill Cooldown -1%",
+        "maxValue": "Skill Cooldown -20%"
+    },
+    {
+        "id": "cascade",
+        "name": "Cascade",
+        "description": "Shortens skill cooldowns whenever you hit a foe.Effect strength changes based on the attack type.",
+        "minLvl": "1",
+        "maxLvl": "20",
+        "minValue": "Skill Cooldown -0.1%",
+        "maxValue": "Skill Cooldown -2%"
+    },
+    {
+        "id": "uplift",
+        "name": "Uplift",
+        "description": "Boosts the charge speed of your SBA gauge.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "SBA Gauge Gain +5%",
+        "maxValue": "SBA Gauge Gain +30%"
+    },
+    {
+        "id": "precise_wrath",
+        "name": "Precise Wrath",
+        "description": "Boosts the charge speed of your SBA gauge and shortens skill cooldowns after a perfect guard.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "SBA Gauge Gain +0.5%Skill Cooldown -0.5%",
+        "maxValue": "SBA Gauge Gain +5%Skill Cooldown -5%"
+    },
+    {
+        "id": "nimble_onslaught",
+        "name": "Nimble Onslaught",
+        "description": "Extends Invincibility after a perfect dodge.Boosts the charge speed of your SBA gauge and shortens skill cooldowns.",
+        "minLvl": "1",
+        "maxLvl": "30",
+        "minValue": "Invincibility +1 sec.SBA Gauge Gain +0.5% / Skill Cooldown -0.5%",
+        "maxValue": "Invincibility +3 sec.SBA Gauge Gain +5% / Skill Cooldown -5%"
+    },
+    {
+        "id": "potent_greens",
+        "name": "Potent Greens",
+        "description": "Using a green potion removes all debuffs.When 2 Potent Greens are equipped, green potion also grants Debuff Immunity.",
+        "minLvl": "15",
+        "maxLvl": "30",
+        "minValue": "Green potions remove all debuffs",
+        "maxValue": "Green potions remove all debuffs and grant Debuff Immunity"
+    },
+    {
+        "id": "potion_hoarder",
+        "name": "Potion Hoarder",
+        "description": "Increases the stock of recovery items.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "Green potion +0, blue potion +1,mega potion +0, revival potion +0",
+        "maxValue": "Green potion +4, blue potion +5,mega potion +5, revival potion +1"
+    },
+    {
+        "id": "auto_potion",
+        "name": "Auto Potion",
+        "description": "Automatically uses a potion when HP drops below a certain threshold.Effect is disabled when using any assist modes.Increases the stock of all recovery items by 1.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "Automatically uses a green potion at 50% HP or lessAll Recovery Items +1",
+        "maxValue": "Automatically uses a green potion at 50% HP or lessAll Recovery Items +1"
+    },
+    {
+        "id": "guts",
+        "name": "Guts",
+        "description": "Survive a lethal hit with 1 HP.Number of activations and reactivation time changes based on trait level.",
+        "minLvl": "1",
+        "maxLvl": "20",
+        "minValue": "Activations +1Ready for reactivation after 230 sec.",
+        "maxValue": "Activations +3Ready for reactivation after 120 sec."
+    },
+    {
+        "id": "autorevive",
+        "name": "Autorevive",
+        "description": "Automatically recover from critical condition.Number of activations and reactivation time changes based on trait level.",
+        "minLvl": "1",
+        "maxLvl": "20",
+        "minValue": "Activations +1Ready for reactivation after 230 sec.",
+        "maxValue": "Activations +3Ready for reactivation after 120 sec."
+    },
+    {
+        "id": "steady_focus",
+        "name": "Steady Focus",
+        "description": "Boosts defense and can't be interrupted by foe attacks while charging attacks.",
+        "minLvl": "1",
+        "maxLvl": "15",
+        "minValue": "DEF +6%Grants Stout Heart",
+        "maxValue": "DEF +20%Grants Stout Heart"
+    },
+    {
+        "id": "provoke",
+        "name": "Provoke",
+        "description": "Foes are more likely to target you.",
+        "minLvl": "1",
+        "maxLvl": "20",
+        "minValue": "Hostility +3",
+        "maxValue": "Hostility +50"
+    },
+    {
+        "id": "low_profile",
+        "name": "Low Profile",
+        "description": "Foes are less likely to target you.",
+        "minLvl": "1",
+        "maxLvl": "20",
+        "minValue": "Hostility -3",
+        "maxValue": "Hostility -50"
+    },
+    {
+        "id": "fast_learner",
+        "name": "Fast Learner",
+        "description": "Earn more experience points for defeating foes and clearing quests.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "EXP +1%",
+        "maxValue": "EXP +30%"
+    },
+    {
+        "id": "rupie_tycoon",
+        "name": "Rupie Tycoon",
+        "description": "Earn more rupies.The effect doesn't apply to online players in your party.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "Rupies +2%",
+        "maxValue": "Rupies +60%"
+    },
+    {
+        "id": "path_to_mastery",
+        "name": "Path to Mastery",
+        "description": "Boosts the amount of mastery points earned.The effect doesn't apply to online players in your party.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "MSP +2%",
+        "maxValue": "MSP +30%"
+    },
+    {
+        "id": "crabby_resonance",
+        "name": "Crabby Resonance",
+        "description": "Raises trait level based on wee pincers rescued.You then gain the associated effect.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "Wee pincers rescued: 1Grants ATK +3",
+        "maxValue": "Wee pincers rescued: 45Grants ATK +1000"
+    },
+    {
+        "id": "crabvestment_returns",
+        "name": "Crabvestment Returns",
+        "description": "Raises trait level based on wee pincers rescued.You then gain the associated effect.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "HP +20%Grants 10% DMG Cut",
+        "maxValue": "HP +20%Grants 10% DMG Cut"
+    },
+    {
+        "id": "crabmiration",
+        "name": "Crabmiration",
+        "description": "Raises trait level based on wee pincers rescued.You then gain the associated effect.",
+        "minLvl": "1",
+        "maxLvl": "45",
+        "minValue": "Wee pincers rescued: 1Grants max HP +200",
+        "maxValue": "Wee pincers rescued: 45Grants max HP +8000"
+    },
+    {
+        "id": "immortal_shell",
+        "name": "Immortal Shell",
+        "description": "Raises trait level based on dark wee pincers rescued.You then gain all associated effects.",
+        "minLvl": "1",
+        "maxLvl": "20",
+        "minValue": "Dark wee pincers rescued: 1ATK +2%",
+        "maxValue": "Dark wee pincers rescued: 20DMG Cap +5% / DEF +2%Deal 5% Supplementary DMG / DMG↑ (2%)"
+    },
+    {
+        "id": "in_a_pinch",
+        "name": "In a Pinch",
+        "description": "A dark wee pincer will rescue you from critical condition.Grants a temporary boost to attack specs upon recovering from critical condition.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "Critical Condition Recovery Time -30%On recovery: ATK +10% / DMG↑ (5%) / DMG Cap +5%",
+        "maxValue": "Critical Condition Recovery Time -30%On recovery: ATK +10% / DMG↑ (5%) / DMG Cap +5%"
+    },
+    {
+        "id": "sumo_force",
+        "name": "Sumo Force",
+        "description": "Raises trait level based on number of Jumbo Crab's Title Fight quest completions. You then gain the associated effects.Upgrading sigils has no effect on this trait.",
+        "minLvl": "1",
+        "maxLvl": "5",
+        "minValue": "At 1 Jumbo Crab's Title Fight quest completion:Stun Power +5",
+        "maxValue": "At 5 Jumbo Crab's Title Fight quest completions:Stun Power +25 / Healing Cap +10% (Healing skills)ATK +1000 / HP +2000"
+    },
+    {
+        "id": "stout_heart",
+        "name": "Stout Heart",
+        "description": "Can't be interrupted by foe attacks.",
+        "minLvl": "15",
+        "maxLvl": "15",
+        "minValue": "Grants Stout Heart",
+        "maxValue": "Grants Stout Heart"
+    },
+    {
+        "id": "alpha",
+        "name": "Alpha",
+        "description": "Boosts damage cap of normal attacks.This DMG Cap effect stacks with the DMG Cap trait.Enhances Skybound Art specs at max T. Lvl.",
+        "minLvl": "11",
+        "maxLvl": "30",
+        "minValue": "[Attack] / [Unique Attack] DMG Cap +17%",
+        "maxValue": "[Attack] / [Unique Attack] DMG Cap +40%SBA Gauge Gain +30% to all allies upon activating your SBA"
+    },
+    {
+        "id": "beta",
+        "name": "Beta",
+        "description": "Boosts damage cap of damage skills.This DMG Cap effect stacks with the DMG Cap trait.Enhances Skybound Art specs at max T. Lvl.",
+        "minLvl": "11",
+        "maxLvl": "30",
+        "minValue": "Skill DMG Cap +23%",
+        "maxValue": "Skill DMG Cap +50%Skill Cooldown -10% upon activating your SBA"
+    },
+    {
+        "id": "gamma",
+        "name": "Gamma",
+        "description": "Boosts damage cap.This DMG Cap effect stacks with the DMG Cap trait.Enhances Skybound Art specs at max T. Lvl.",
+        "minLvl": "11",
+        "maxLvl": "30",
+        "minValue": "DMG Cap +11%",
+        "maxValue": "DMG Cap +30%Grants Shield (50000) upon activating your SBA"
+    },
+    {
+        "id": "catastrophe",
+        "name": "Catastrophe",
+        "description": "Boosts attack power and damage cap when maximum health is below a certain threshold.",
+        "minLvl": "Terminus",
+        "maxLvl": "Terminus",
+        "minValue": "25",
+        "maxValue": "25"
+    },
+    {
+        "id": "dmg_cap_ecru",
+        "name": "DMG Cap Ecru",
+        "description": "Boosts attack power and damage cap based on how high your maximum health is.",
+        "minLvl": "Defender",
+        "maxLvl": "Defender",
+        "minValue": "1",
+        "maxValue": "1"
+    },
+    {
+        "id": "dmg_cap_cardinal",
+        "name": "DMG Cap Cardinal",
+        "description": "Boosts attack specs based on weak point / back damage dealt.Effect can be strengthened up to 4 times, can't be dispelled, and ends when no damage is dealt to foes in time.",
+        "minLvl": "Executioner",
+        "maxLvl": "Executioner",
+        "minValue": "1",
+        "maxValue": "1"
+    },
+    {
+        "id": "dmg_cap_cobalt",
+        "name": "DMG Cap Cobalt",
+        "description": "Boosts attack power and damage cap based on excess critical hit rate above 100%.",
+        "minLvl": "Stinger",
+        "maxLvl": "Stinger",
+        "minValue": "1",
+        "maxValue": "1"
+    },
+    {
+        "id": "dmg_cap_sage",
+        "name": "DMG Cap Sage",
+        "description": "Boosts attack specs upon gaining a certain amount of link level.This effect can be strengthened up to 4 times, can't be dispelled, and lasts for the entire duration of a quest.",
+        "minLvl": "Stunner",
+        "maxLvl": "Stunner",
+        "minValue": "1",
+        "maxValue": "1"
+    },
+    {
+        "id": "supernova",
+        "name": "Supernova",
+        "description": "Boosts attack power and damage cap.",
+        "minLvl": "Ascension",
+        "maxLvl": "Ascension",
+        "minValue": "1",
+        "maxValue": "1"
+    },
+    {
+        "id": "catastrophe_nova",
+        "name": "Catastrophe Nova",
+        "description": "Boosts attack power and damage cap when maximum health is below a certain threshold.",
+        "minLvl": "Terminus",
+        "maxLvl": "Terminus",
+        "minValue": "25",
+        "maxValue": "25"
+    },
+    {
+        "id": "unbound_strike",
+        "name": "Unbound Strike",
+        "description": "Boosts damage cap of normal attacks.",
+        "minLvl": "Ascension",
+        "maxLvl": "Ascension",
+        "minValue": "15",
+        "maxValue": "15"
+    },
+    {
+        "id": "unbound_technique",
+        "name": "Unbound Technique",
+        "description": "Boosts damage cap of skills.",
+        "minLvl": "ExecutionerStinger",
+        "maxLvl": "ExecutionerStinger",
+        "minValue": "15",
+        "maxValue": "15"
+    },
+    {
+        "id": "unbound_exertion",
+        "name": "Unbound Exertion",
+        "description": "Boosts damage cap of Skybound Arts.",
+        "minLvl": "DefenderStunner",
+        "maxLvl": "DefenderStunner",
+        "minValue": "15",
+        "maxValue": "15"
+    },
+    {
+        "id": "unbound_master",
+        "name": "Unbound Master",
+        "description": "Boosts damage cap based on master level.",
+        "minLvl": "Terminus",
+        "maxLvl": "Terminus",
+        "minValue": "1",
+        "maxValue": "1"
+    }
+]

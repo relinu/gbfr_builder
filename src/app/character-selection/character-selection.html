@@ -1,0 +1,7 @@
+<div>
+    @for(item of getCharacters(); track item.id) {
+        <button (click)="selectCharacter(item)">
+            {{ item.name }}
+        </button>
+    }
+</div>

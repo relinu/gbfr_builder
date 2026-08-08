@@ -1,0 +1,13 @@
+[
+    {
+        "id": "0",
+        "charaID": "0",
+        "name": "Albacore Blade",
+        "longName": "Albacore Blade",
+        "icon": "Weapon Albacore Blade Icon.png",
+        "image": "Weapon Albacore Blade.png",
+        "atk": "2299",
+        "hp": "1542",
+        "series": "Stinger"
+    }
+]

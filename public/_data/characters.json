@@ -1,0 +1,46 @@
+[
+    {
+        "id": "0",
+        "name": "Gran",
+        "portrait": "Gran wide.png",
+        "element": "Wind",
+        "baseHP": "150",
+        "HP": "3430",
+        "baseATK": "10",
+        "ATK": "677",
+        "baseStun": "80",
+        "baseCrit": "5",
+        "passives": [
+            {
+                "name": "Adept Arts",
+                "description": "Skills are enhanced based on Adept Arts level. Landing combo finishers raises Arts level, and the level resets shortly after a skill is activated."
+            },
+            {
+                "name": "Adrenaline Rush",
+                "description": "Greatly increases Power Raise's charge speed when charged immediately after a combo finisher."
+            }
+        ]
+    },
+    {
+        "id": "1",
+        "name": "Test",
+        "portrait": "Gran wide.png",
+        "element": "Wind",
+        "baseHP": "150",
+        "HP": "3430",
+        "baseATK": "10",
+        "ATK": "677",
+        "baseStun": "80",
+        "baseCrit": "5",
+        "passives": [
+            {
+                "name": "Adept Arts",
+                "description": "Skills are enhanced based on Adept Arts level. Landing combo finishers raises Arts level, and the level resets shortly after a skill is activated."
+            },
+            {
+                "name": "Adrenaline Rush",
+                "description": "Greatly increases Power Raise's charge speed when charged immediately after a combo finisher."
+            }
+        ]
+    }
+]

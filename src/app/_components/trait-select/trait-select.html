@@ -1,0 +1,10 @@
+<mat-form-field>
+    <mat-label>{{ label() }}</mat-label>
+    <input #traitInput type="text" matInput [formControl]="traitControl()" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete" requireSelection [displayWith]="(value) => displayTrait(value)">
+        <mat-option [value]="null">-</mat-option>
+        @for (option of filter(); track option.id) {
+        <mat-option [value]="option.id">{{ option.name }}</mat-option>
+        }
+    </mat-autocomplete>
+</mat-form-field>
