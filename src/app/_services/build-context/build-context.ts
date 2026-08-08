@@ -14,6 +14,7 @@ export class BuildContext {
     private _weaponId: string = "";
     private _sigils: Sigil[] = [];
     private _skills: (string | undefined)[] = [];
+    private _masterTraits: Set<string> = new Set();
 
     constructor() {
         this._characterId = BuildContext.DEFAULT_CHAR_ID;
@@ -60,9 +61,21 @@ export class BuildContext {
             this._skills[id] = value;
     }
 
+    public hasMasterTrait(id: string): boolean {
+        return this._masterTraits.has(id);
+    }
+
+    public toggleMasterTrait(id: string, active: boolean): void {
+        if (active)
+            this._masterTraits.add(id);
+        else
+            this._masterTraits.delete(id);
+    }
+
     private resetCharacter() {
         this._sigils = Array<Sigil>(BuildContext.SIGIL_MAX_COUNT);
         this._skills = Array<string | undefined>(BuildContext.SKILL_MAX_COUNT);
+        this._masterTraits = new Set();
         this.resetWeapon();
     }
 

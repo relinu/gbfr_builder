@@ -1,0 +1,54 @@
+.page-header {
+    font: var(--mat-sys-headline-small);
+    letter-spacing: var(--mat-sys-headline-small-tracking);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.tab-count {
+    color: var(--mat-sys-secondary);
+    font-size: 0.85rem;
+    margin-left: 0.35rem;
+}
+
+.style-content {
+    max-width: 750px;
+    padding: 1.5rem 0.5rem;
+}
+
+.rank-block {
+    margin-bottom: 1.5rem;
+}
+
+.rank-block:last-child {
+    margin-bottom: 0;
+}
+
+.rank-header {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.rank-count {
+    color: var(--mat-sys-secondary);
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.trait-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.trait-entry {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--mat-sys-outline-variant);
+    border-radius: 4px;
+}
+
+.trait-description {
+    color: var(--mat-sys-secondary);
+    font-size: 0.85rem;
+    margin-left: 2rem;
+}
