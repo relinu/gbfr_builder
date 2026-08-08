@@ -51,4 +51,16 @@
       }
     </div>
   </div>
+
+  <div class="section">
+    <span class="section-header">Master Traits</span>
+    <div class="mastery-grid">
+      @for (style of masterStyles; track style) {
+      <div class="mastery-entry">
+        <span class="mastery-style">{{ style }}</span>
+        <span class="mastery-points">{{ getMasteryPoints(style) }} Points</span>
+      </div>
+      }
+    </div>
+  </div>
 </div>

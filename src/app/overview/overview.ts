@@ -10,6 +10,8 @@ import { Character } from '../_models/character-model';
 import { Weapon } from '../_models/weapon-model';
 import { Sigil } from '../_models/sigil-model';
 import { CharacterSelectDialog } from './character-select-dialog/character-select-dialog';
+import { MasterTraitService } from '../_services/master-trait-service/master-trait-service';
+import { MasterStyle } from '../_models/master-trait-model';
 
 @Component({
   selector: 'app-overview',
@@ -24,9 +26,11 @@ export class Overview {
   private weaponService = inject(WeaponService);
   private traitService = inject(TraitService);
   private skillService = inject(SkillService);
+  private masterTraitService = inject(MasterTraitService);
 
   readonly sigilIds = Array.from({ length: BuildContext.SIGIL_MAX_COUNT }, (_, i) => i);
   readonly skillIds = Array.from({ length: BuildContext.SKILL_MAX_COUNT }, (_, i) => i);
+  readonly masterStyles: MasterStyle[] = ['Insight', 'Essence', 'Crux'];
 
   public get character(): Character | undefined {
     return this.characterService.get(this.build.character);
@@ -51,6 +55,12 @@ export class Overview {
     if (!skillId) return '-';
     const skill = this.skillService.get(skillId);
     return skill ? skill.name : '-';
+  }
+
+  public getMasteryPoints(style: MasterStyle): number {
+    return this.masterTraitService.getAllFor(this.build.character)
+      .filter(t => t.style === style && this.build.hasMasterTrait(t.id))
+      .length;
   }
 
   public openCharacterDialog(): void {
