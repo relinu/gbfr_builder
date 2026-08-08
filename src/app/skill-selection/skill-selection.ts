@@ -22,7 +22,7 @@ export class SkillSelection implements OnInit {
   availableSkills: Skill[] = [];
 
   ngOnInit(): void {
-    const characterId = this.build.characterId;
+    const characterId = this.build.character;
     this.availableSkills = this.skillService.getAllFor(characterId);
 
     this.controls = this.slots.map((i) => {

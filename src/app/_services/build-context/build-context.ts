@@ -11,30 +11,27 @@ export class BuildContext {
     private weaponService = inject(WeaponService);
 
     private _characterId: string;
-    private _weaponId: string;
-    private _sigils: Sigil[];
-    private _skills: (string | undefined)[];
+    private _weaponId: string = "";
+    private _sigils: Sigil[] = [];
+    private _skills: (string | undefined)[] = [];
 
     constructor() {
         this._characterId = BuildContext.DEFAULT_CHAR_ID;
-        this._weaponId = "";
-        this._sigils = Array<Sigil>(BuildContext.SIGIL_MAX_COUNT);
-        this._skills = Array<string | undefined>(BuildContext.SKILL_MAX_COUNT);
+        this.resetCharacter();
     }
 
-    public get characterId(): string {
+    public get character(): string {
         return this._characterId;
     }
 
-    public set characterId(id: string) {
+    public set character(id: string) {
         this._characterId = id;
+        this.resetCharacter();
     }
 
     public get weaponId(): string {
-        if (this._weaponId === "") {
-            const charWeapons = this.weaponService.getAllFor(this.characterId);
-            this._weaponId = charWeapons.length > 0 ? charWeapons[0].id : '';
-        }
+        if (this._weaponId === "")
+            this.resetWeapon();
 
         return this._weaponId;
     }
@@ -61,5 +58,16 @@ export class BuildContext {
     public setSkill(id: number, value: string | undefined) {
         if (id >= 0 && id < BuildContext.SKILL_MAX_COUNT)
             this._skills[id] = value;
+    }
+
+    private resetCharacter() {
+        this._sigils = Array<Sigil>(BuildContext.SIGIL_MAX_COUNT);
+        this._skills = Array<string | undefined>(BuildContext.SKILL_MAX_COUNT);
+        this.resetWeapon();
+    }
+
+    private resetWeapon() {
+        const charWeapons = this.weaponService.getAllFor(this.character);
+        this._weaponId = charWeapons.length > 0 ? charWeapons[0].id : '';
     }
 }

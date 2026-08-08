@@ -18,6 +18,6 @@ export class CharacterSelection {
   }
 
   public selectCharacter(character: any) {
-    this.buildContext.characterId = character.id;
+    this.buildContext.character = character.id;
   }
 }

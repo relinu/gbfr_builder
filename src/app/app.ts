@@ -16,7 +16,7 @@ export class App {
   private buildContext = inject(BuildContext);
 
   public getCharacterName(): string {
-    const characterId = this.buildContext.characterId;
+    const characterId = this.buildContext.character;
     const currentCharacter = this.characterService.get(characterId);
     return currentCharacter?.name ?? '';
   }

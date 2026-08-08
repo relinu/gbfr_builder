@@ -45,3 +45,14 @@
     border: 1px solid var(--mat-sys-outline-variant);
     border-radius: 4px;
 }
+
+.section-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+}
+
+.section-header-row .section-header {
+    margin-bottom: 0;
+}
