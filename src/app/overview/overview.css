@@ -1,0 +1,47 @@
+.overview-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 750px;
+}
+
+.section-header {
+    font: var(--mat-sys-headline-small);
+    letter-spacing: var(--mat-sys-headline-small-tracking);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.entry-title {
+    font-weight: 500;
+}
+
+.empty {
+    color: var(--mat-sys-secondary);
+}
+
+.sigil-grid,
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.sigil-entry {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border: 1px solid var(--mat-sys-outline-variant);
+    border-radius: 4px;
+}
+
+.sigil-sub {
+    color: var(--mat-sys-secondary);
+    font-size: 0.85rem;
+}
+
+.skill-entry {
+    padding: 0.5rem;
+    border: 1px solid var(--mat-sys-outline-variant);
+    border-radius: 4px;
+}
