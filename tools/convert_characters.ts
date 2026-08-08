@@ -1,11 +1,11 @@
 import { Character, ElementalType } from '../src/app/_models/character-model';
 import fs from 'node:fs';
 
-const charFile = fs.readFileSync('./tools/assets/characters.json');
-const _characters = JSON.parse(charFile);
+const file = fs.readFileSync('./tools/assets/characters.json');
+const _characters = JSON.parse(file);
 
-const chars = _characters.map(c => {
-    const char: Character = {
+const characters = _characters.map(c => {
+    const mapped: Character = {
         id: c.id,
         name: c.name,
         portrait: c.portrait,
@@ -28,8 +28,8 @@ const chars = _characters.map(c => {
         ]
     };
 
-    return char;
+    return mapped;
 });
 
 const filePath = `./public/_data/characters.json`;
-fs.writeFileSync(filePath, JSON.stringify(chars));
+fs.writeFileSync(filePath, JSON.stringify(characters));
