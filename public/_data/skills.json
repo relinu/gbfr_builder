@@ -1,0 +1,23 @@
+[
+    {
+        "id": "0",
+        "charaID": "0",
+        "name": "Power Raise",
+        "description": "Temporarily boosts attack power.",
+        "icon": "Skill Power Raise Icon.png"
+    },
+    {
+        "id": "1",
+        "charaID": "0",
+        "name": "Rupie Rain",
+        "description": "Deals damage in an area and boosts item drop rate.",
+        "icon": "Skill Rupie Rain Icon.png"
+    },
+    {
+        "id": "2",
+        "charaID": "0",
+        "name": "Rising Blade",
+        "description": "A rising slash that launches nearby foes.",
+        "icon": "Skill Rising Blade Icon.png"
+    }
+]
