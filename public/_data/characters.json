@@ -4,12 +4,12 @@
         "name": "Gran",
         "portrait": "Gran wide.png",
         "element": "Wind",
-        "baseHP": "150",
-        "HP": "3430",
-        "baseATK": "10",
-        "ATK": "677",
-        "baseStun": "80",
-        "baseCrit": "5",
+        "baseHP": 150,
+        "HP": 3430,
+        "baseATK": 10,
+        "ATK": 677,
+        "baseStun": 80,
+        "baseCrit": 5,
         "passives": [
             {
                 "name": "Adept Arts",
@@ -23,15 +23,15 @@
     },
     {
         "id": "1",
-        "name": "Test",
-        "portrait": "Gran wide.png",
+        "name": "Djeeta",
+        "portrait": "Djeeta wide.png",
         "element": "Wind",
-        "baseHP": "150",
-        "HP": "3430",
-        "baseATK": "10",
-        "ATK": "677",
-        "baseStun": "80",
-        "baseCrit": "5",
+        "baseHP": 150,
+        "HP": 3430,
+        "baseATK": 10,
+        "ATK": 677,
+        "baseStun": 80,
+        "baseCrit": 5,
         "passives": [
             {
                 "name": "Adept Arts",
@@ -40,6 +40,600 @@
             {
                 "name": "Adrenaline Rush",
                 "description": "Greatly increases Power Raise's charge speed when charged immediately after a combo finisher."
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Katalina",
+        "portrait": "Katalina wide.png",
+        "element": "Water",
+        "baseHP": 154,
+        "HP": 3499,
+        "baseATK": 9,
+        "ATK": 656,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Blue Radiance",
+                "description": "Allows Ares to temporarily join Katalina's attack when Ares gauge is full. Perform a combo finisher, link attack, or skill to summon Ares."
+            },
+            {
+                "name": "Vow by the Sword",
+                "description": "Katalina's skills and Skybount Art are enhanced while Ares is summoned."
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Rackam",
+        "portrait": "Rackam wide.png",
+        "element": "Fire",
+        "baseHP": 156,
+        "HP": 3570,
+        "baseATK": 14,
+        "ATK": 631,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Sleight of Hand",
+                "description": "Bull's Eye Blast charges faster depending no how high the Heat gauge is. Landing primary attacks and link attacks fills the gauge."
+            },
+            {
+                "name": "Rythmic Trigger",
+                "description": "Allows Rackam to fire 3-shot bursts by long-pressing primary. Burst-fire attacks deal more damage when chained together with perfect timing."
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Io",
+        "portrait": "Io wide.png",
+        "element": "Light",
+        "baseHP": 144,
+        "HP": 3156,
+        "baseATK": 9,
+        "ATK": 666,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Enchanted",
+                "description": "Stargaze is chargeable up to 4 times based on how many Mystic Vortex orbs Io has. Landing a fully charged primary spell grants an orb."
+            },
+            {
+                "name": "Quick Cast",
+                "description": "Greatly increases Stargaze's charge speed when charged immediately after gaining a Mystic Vortex orb."
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Eugen",
+        "portrait": "Eugen wide.png",
+        "element": "Earth",
+        "baseHP": 158,
+        "HP": 3637,
+        "baseATK": 12,
+        "ATK": 699,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Take Aim",
+                "description": "Eugen can't move while in sniper vision, but he can manually aim his shots to deal more damage."
+            },
+            {
+                "name": "Fists of the Marksman",
+                "description": "Eugen switches to hand-to-hand combat style against nearby foes."
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Rosetta",
+        "portrait": "Rosetta wide.png",
+        "element": "Dark",
+        "baseHP": 146,
+        "HP": 3327,
+        "baseATK": 10,
+        "ATK": 642,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Rose Garden",
+                "description": "Rosetta plants roses that attack foes within range. Roses level up as the hit foes, enhancing their capabilities."
+            },
+            {
+                "name": "Overgrowth",
+                "description": "Planted roses grant various buffs to the entire party whenever Rosetta uses a combo finisher. The highest leveled rose determines effect strength."
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Ferry",
+        "portrait": "Ferry Portrait.png",
+        "element": "Light",
+        "baseHP": 146,
+        "HP": 3256,
+        "baseATK": 8,
+        "ATK": 620,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Friends Till the End",
+                "description": "Landing the final hit of a charged primary attack summons one of Ferry's pets. Performing a link attack summons one of her pets simultaneously."
+            },
+            {
+                "name": "Haunting Army",
+                "description": "Primary attacks deal more damage based on how many pets are on the battlefield."
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Lancelot",
+        "portrait": "Lancelot Portrait.png",
+        "element": "Water",
+        "baseHP": 152,
+        "HP": 3462,
+        "baseATK": 10,
+        "ATK": 652,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Stiller Glanz",
+                "description": "Sustaining rapid primary attacks will eventually coat Lancelot's blades in ice, allowing him to deal more damage."
+            },
+            {
+                "name": "Wirbelwind",
+                "description": "Dodging an atack via direction+secondary with perfect timing triggers a perfect dodge. Lancelot can then launch into a combo after dodging."
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Vane",
+        "portrait": "Vane Portrait.png",
+        "element": "Water",
+        "baseHP": 161,
+        "HP": 3704,
+        "baseATK": 12,
+        "ATK": 689,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Proof of Valor",
+                "description": "Allows Vane to perform powerful secondary combos by consuming the Beatdown gauge. Landing combo finishers fills the gauge."
+            },
+            {
+                "name": "The Dragon Within",
+                "description": "Allows Vane to block a foe's attack with a perfectly timed secondary attack without being interrupted."
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Percival",
+        "portrait": "Percival Portrait.png",
+        "element": "Fire",
+        "baseHP": 160,
+        "HP": 3604,
+        "baseATK": 11,
+        "ATK": 707,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Flamen Rüstung",
+                "description": "Foe attacks won't interrupt Percival while he's charging Schlacht."
+            },
+            {
+                "name": "Adrenaline Rush",
+                "description": "Greatly increases Schlacht's charge speed when charged immediately after a combo finisher."
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Siegfried",
+        "portrait": "Siegfried Portrait.png",
+        "element": "Earth",
+        "baseHP": 155,
+        "HP": 3535,
+        "baseATK": 13,
+        "ATK": 739,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Délivrance",
+                "description": "Enhances perfectly timed primary attacks when they are chained in a combo."
+            },
+            {
+                "name": "DRachenblut",
+                "description": "Foes attacks won't interrupt Siegfried while he's performing secondary attacks."
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Charlotta",
+        "portrait": "Charlotta wide.png",
+        "element": "Light",
+        "baseHP": 148,
+        "HP": 3399,
+        "baseATK": 8,
+        "ATK": 665,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Noble Stane",
+                "description": "Performing rapid primary attacks, link attacks, and activating damage skills causes Charlotta's sword to glow, which enhances her attacks."
+            },
+            {
+                "name": "Enforcer of Justice",
+                "description": "Allows Charlotta to block a foe's attack with a perfectly timed secondary attack without being interrupted."
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "name": "Yodarha",
+        "portrait": "Yodarha Portrait.png",
+        "element": "Wind",
+        "baseHP": 145,
+        "HP": 3197,
+        "baseATK": 13,
+        "ATK": 730,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Lost for Words",
+                "description": "Yodarha's skills are enhanced based on the number of Triple Shroud marks he has. Landing a combo fnisher gives 1 mark."
+            },
+            {
+                "name": "Sharpened Focus",
+                "description": "Yodarha can chain into another combo by pressing primary after a combo finisher. Each follow-up combo gets chorter, allowing him to trigger finishers more often."
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "name": "Narmaya",
+        "portrait": "Narmaya Portrait.png",
+        "element": "Dark",
+        "baseHP": 145,
+        "HP": 3361,
+        "baseATK": 12,
+        "ATK": 708,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Butterfly Effect",
+                "description": "Narmaya can switch between Dawnfly stance and her Freeflutter stance. Her skills and primary attacks perform differently basd on her stance."
+            },
+            {
+                "name": "Take Flight",
+                "description": "Narmaya's skills are enhanced based on the number of butterflies she has. Landing specific attacks and link attacks grants butterflies."
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "name": "Ghandagoza",
+        "portrait": "Ghandagoza Portrait.png",
+        "element": "Fire",
+        "baseHP": 166,
+        "HP": 3739,
+        "baseATK": 14,
+        "ATK": 741,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Eternal Rage Style",
+                "description": "Ghandagoza's Raging Fist charges faster and deals more damage based on his Eternal Rage. Combo finishers and link attacks gather Eternal Rage."
+            },
+            {
+                "name": "Enter the Fist",
+                "description": "Enhances perfectly timed primary attacks when they are chained in a combo."
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "name": "Zeta",
+        "portrait": "Zeta Portrait.png",
+        "element": "Fire",
+        "baseHP": 147,
+        "HP": 3293,
+        "baseATK": 11,
+        "ATK": 728,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Accelerating Flare",
+                "description": "Allows Zeta to create an airborne attack loop by pressing primary with perfect iming after high jumping. Each successive loop busts her attack."
+            },
+            {
+                "name": "Arvess Resonance",
+                "description": "Landing a loop finisher after performing 3 loop combos in a row inflicts the Arvess Fermare status ailment."
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "name": "Vaseraga",
+        "portrait": "Vaseraga Portrait.png",
+        "element": "Dark",
+        "baseHP": 168,
+        "HP": 3773,
+        "baseATK": 13,
+        "ATK": 720,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Feel No Pain",
+                "description": "Vaseraga gains Stout Heart, ATK↑, and DEF↑ based on the level of the Grynoth gauge. Landing charged secondary attacks fills the gauge."
+            },
+            {
+                "name": "Melas Unleashed",
+                "description": "Pressing secondary attack fills up the Grynoth gauge by a certain amount and grants Stout Heart to Vaseraga."
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "name": "Cagliostro",
+        "portrait": "Cagliostro Portrait.png",
+        "element": "Earth",
+        "baseHP": 145,
+        "HP": 3227,
+        "baseATK": 9,
+        "ATK": 636,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Founder of Alchemy",
+                "description": "Cagliostro transmutes various implements of murder based on the cmobo she uses."
+            },
+            {
+                "name": "Adrenaline Rush",
+                "description": "Greatly increases Collapse's charge speed when charged immediately after a combo finisher."
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "name": "Id",
+        "portrait": "Id Portrait.png",
+        "element": "Dark",
+        "baseHP": 149,
+        "HP": 3394,
+        "baseATK": 10,
+        "ATK": 687,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Soul Link",
+                "description": "Allows Id to enter Dragonform upon attacking with secondary once the Versalis gauge is full. Landing specific secondary and link attacks fills the gauge."
+            },
+            {
+                "name": "Godmight",
+                "description": "Allows Dragonform Id to enter Godmight once 4 outer segments of the Versalis gauge are full. Landing combo finishers and link attacks fills segments."
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "name": "Sandalphon",
+        "portrait": "Sandalphon wide.png",
+        "element": "Light",
+        "baseHP": 155,
+        "HP": 3630,
+        "baseATK": 11,
+        "ATK": 688,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Tetra-Elemental Power",
+                "description": "Allows Sandalphon to gain Chromatic Wings by charging secondary once the Archangel gauge is full. Landing specific attacks and charging secondary fills the gauge."
+            },
+            {
+                "name": "Righteous Deed",
+                "description": "Enhances perfectly timed primary attacks when they are chained in a combo."
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "name": "Seofon",
+        "portrait": "Seofon wide.png",
+        "element": "Wind",
+        "baseHP": 150,
+        "HP": 3530,
+        "baseATK": 13,
+        "ATK": 709,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Star Sword Sovereign",
+                "description": "Allows Seofon to consume the Avatar gauge to summon an avatar with secondary. Landing combo finishers fills the Avatar gauge."
+            },
+            {
+                "name": "Spirit Swords",
+                "description": "Seofon deals additional attacks based on his Swordshine level. Landing combo finishers while an avatar is summoned raises Swordshine level."
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "name": "Tweyen",
+        "portrait": "Tweyen wide.png",
+        "element": "Light",
+        "baseHP": 146,
+        "HP": 3260,
+        "baseATK": 9,
+        "ATK": 686,
+        "baseStun": 80,
+        "baseCrit": 5,
+        "passives": [
+            {
+                "name": "Dark Huntress",
+                "description": "Holding secondary allows Tweyen to lock on to multiple targets based on her Ultrasight level. Landing attacks and skills raises the level."
+            },
+            {
+                "name": "Bring the Thunder",
+                "description": "Grants Bring the Thunder to Tweyen upon using her SBA. Her damage skills deal more damage and inflict Paralysis while Bring the Thunder is in effect."
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "name": "Gallanza",
+        "portrait": "Gallanza wide.png",
+        "element": "Earth",
+        "baseHP": 0,
+        "HP": 0,
+        "baseATK": 0,
+        "ATK": 0,
+        "baseStun": 0,
+        "baseCrit": 0,
+        "passives": [
+            {
+                "name": "Stronger of Will, Stronger of Might",
+                "description": "Allows Gallanza to enter Deathmatch Finale once the Silver Wolf gauge is full. Landing combo finishers and link attacks fills the gauge."
+            },
+            {
+                "name": "Vengeful Turbine",
+                "description": "After releasing [Unique Attack] of Gallanza's charged [Unique Attack], the final swing deflects a foe's attack to nullify the damage and counter."
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "name": "Maglielle",
+        "portrait": "Maglielle wide.png",
+        "element": "Light",
+        "baseHP": 0,
+        "HP": 0,
+        "baseATK": 0,
+        "ATK": 0,
+        "baseStun": 0,
+        "baseCrit": 0,
+        "passives": [
+            {
+                "name": "Étude of Devotion",
+                "description": "Maglielle•s combo finishers are aimable with [Move Camera]. Landing enough hits with a finisher causes its swords to independently attack foes."
+            },
+            {
+                "name": "Cascading Tremolo",
+                "description": "Maglielle fires magic swords in front of her with [Unique Attack]. Holding [Unique Attack] prolongs the attack while depleting the Veil gauge. Landing combo finishers fills the gauge."
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "name": "Beatrix",
+        "portrait": "Beatrix Portrait.png",
+        "element": "Water",
+        "baseHP": 0,
+        "HP": 0,
+        "baseATK": 0,
+        "ATK": 0,
+        "baseStun": 0,
+        "baseCrit": 0,
+        "passives": [
+            {
+                "name": "",
+                "description": ""
+            },
+            {
+                "name": "",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "name": "Eustace",
+        "portrait": "Eustace Portrait.png",
+        "element": "Wind",
+        "baseHP": 0,
+        "HP": 0,
+        "baseATK": 0,
+        "ATK": 0,
+        "baseStun": 0,
+        "baseCrit": 0,
+        "passives": [
+            {
+                "name": "",
+                "description": ""
+            },
+            {
+                "name": "",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "name": "Fraux",
+        "portrait": "Fraux wide.png",
+        "element": "Fire",
+        "baseHP": 0,
+        "HP": 0,
+        "baseATK": 0,
+        "ATK": 0,
+        "baseStun": 0,
+        "baseCrit": 0,
+        "passives": [
+            {
+                "name": "Dual Threat",
+                "description": "Fraux can flip between Upright stance and Reversed stance. Her [Attack]s and power strikes change based on her stance."
+            },
+            {
+                "name": "Strength Gains",
+                "description": "Fraux gains 3 free skill activations when both stance gauges are full. These skills are enhanced. Landing attacks and skills fills her gauges."
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "name": "Fediel",
+        "portrait": "Fediel wide.png",
+        "element": "Dark",
+        "baseHP": 0,
+        "HP": 0,
+        "baseATK": 0,
+        "ATK": 0,
+        "baseStun": 0,
+        "baseCrit": 0,
+        "passives": [
+            {
+                "name": "Voidskip",
+                "description": "Short hold [Unique Attack] to warp to a desired spot. Long hold [Unique Attack] to warp and launch a follow-up attack. Fediel can't be hit by foes while warping."
+            },
+            {
+                "name": "Miasma Hands",
+                "description": "Allows Fediel to unleash a continuous flurry of claw attacks by repeatedly pressing [Attack] following the attack of a fully charged voidskip."
             }
         ]
     }

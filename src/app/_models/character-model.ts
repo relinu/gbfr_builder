@@ -1,4 +1,4 @@
-export type ElementalType = "Wind" | "Earth";
+export type ElementalType = "Fire" | "Water" | "Earth" | "Wind" | "Light" | "Dark";
 
 export interface Character {
     id: string,

@@ -40,7 +40,6 @@ async function get_tables(): Promise<any> {
     return result.cargotables;
 }
 
-
 async function get_table_data(table: string): Promise<any> {
     const fieldResult = await call_api("cargofields", { table });
     const fieldNames = Object.keys(fieldResult.cargofields);
