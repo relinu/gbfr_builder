@@ -7,6 +7,8 @@ export class BuildContext {
     static readonly DEFAULT_CHAR_ID: string = "0";
     static readonly SIGIL_MAX_COUNT: number = 12;
     static readonly SKILL_MAX_COUNT: number = 4;
+    static readonly WEAPON_TRAIT_MAX_COUNT: number = 4;
+    static readonly WEAPON_IMBUED_TRAIT_MAX_COUNT: number = 3;
 
     private weaponService = inject(WeaponService);
 
@@ -15,6 +17,8 @@ export class BuildContext {
     private _sigils: Sigil[] = [];
     private _skills: (string | undefined)[] = [];
     private _masterTraits: Set<string> = new Set();
+    private _weaponTraits: (string | undefined)[] = [];
+    private _imbuedTraits: (string | undefined)[] = [];
 
     constructor() {
         this._characterId = BuildContext.DEFAULT_CHAR_ID;
@@ -35,6 +39,11 @@ export class BuildContext {
             this.resetWeapon();
 
         return this._weaponId;
+    }
+
+    public set weaponId(id: string) {
+        this._weaponId = id;
+        this.resetWeaponTraits();
     }
 
     public getSigil(id: number): Sigil | undefined {
@@ -72,6 +81,30 @@ export class BuildContext {
             this._masterTraits.delete(id);
     }
 
+    public getWeaponTrait(id: number): string | undefined {
+        if (id >= 0 && id < BuildContext.WEAPON_TRAIT_MAX_COUNT)
+            return this._weaponTraits[id];
+
+        return undefined;
+    }
+
+    public setWeaponTrait(id: number, value: string | undefined) {
+        if (id >= 0 && id < BuildContext.WEAPON_TRAIT_MAX_COUNT)
+            this._weaponTraits[id] = value;
+    }
+
+    public getImbuedTrait(id: number): string | undefined {
+        if (id >= 0 && id < BuildContext.WEAPON_IMBUED_TRAIT_MAX_COUNT)
+            return this._imbuedTraits[id];
+
+        return undefined;
+    }
+
+    public setImbuedTrait(id: number, value: string | undefined) {
+        if (id >= 0 && id < BuildContext.WEAPON_IMBUED_TRAIT_MAX_COUNT)
+            this._imbuedTraits[id] = value;
+    }
+
     private resetCharacter() {
         this._sigils = Array<Sigil>(BuildContext.SIGIL_MAX_COUNT);
         this._skills = Array<string | undefined>(BuildContext.SKILL_MAX_COUNT);
@@ -82,5 +115,11 @@ export class BuildContext {
     private resetWeapon() {
         const charWeapons = this.weaponService.getAllFor(this.character);
         this._weaponId = charWeapons.length > 0 ? charWeapons[0].id : '';
+        this.resetWeaponTraits();
+    }
+
+    private resetWeaponTraits() {
+        this._weaponTraits = Array<string | undefined>(BuildContext.WEAPON_TRAIT_MAX_COUNT);
+        this._imbuedTraits = Array<string | undefined>(BuildContext.WEAPON_IMBUED_TRAIT_MAX_COUNT);
     }
 }

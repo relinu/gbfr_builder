@@ -1,52 +1,27 @@
-<div class="weapon-title">{{ weapon?.name }}</div>
-<div class="ascension-sub">
-    <span class="line"></span>
-    {{ weapon?.series }}
-    <span class="line"></span>
+<mat-form-field class="weapon-select">
+    <mat-label>Weapon</mat-label>
+    <mat-select [formControl]="weaponControl">
+        @for (w of availableWeapons; track w.id) {
+        <mat-option [value]="w.id">{{ w.name }}</mat-option>
+        }
+    </mat-select>
+</mat-form-field>
+
+<div>{{ weapon?.series }}</div>
+
+<div>
+    <img width="220" height="220" [src]="weapon?.image">
 </div>
 
-<div class="weapon-visual">
-    <img width="220" height="220">
+<div>
+    @for (slot of weaponTraitSlots; track slot) {
+    <trait-select [label]="'Trait ' + (slot + 1)" [traitControl]="weaponTraitControls[slot]"></trait-select>
+    }
 </div>
 
-<div class="trait-row-list">
-    <div class="trait-row">
-        <div class="trait-swap"></div>
-        <div class="trait-icon red">★</div>
-        <div class="trait-name">ATK</div>
-    </div>
-    <div class="trait-row swapable">
-        <div class="trait-swap">⇄</div>
-        <div class="trait-icon red">★</div>
-        <div class="trait-name">Supplementary DMG</div>
-    </div>
-    <div class="trait-row swapable">
-        <div class="trait-swap">⇄</div>
-        <div class="trait-icon red">★</div>
-        <div class="trait-name">Supernova</div>
-    </div>
-    <div class="trait-row">
-        <div class="trait-swap"></div>
-        <div class="trait-icon purple">★</div>
-        <div class="trait-name">Sigil Booster</div>
-    </div>
-</div>
-
-<div class="imbued-header">🛡 Imbued Traits <span class="line"></span>Wrightstone</div>
-<div class="trait-row-list">
-    <div class="trait-row swapable">
-        <div class="trait-swap">⇄</div>
-        <div class="trait-icon red">★</div>
-        <div class="trait-name">Weak Point DMG</div>
-    </div>
-    <div class="trait-row swapable">
-        <div class="trait-swap">⇄</div>
-        <div class="trait-icon red">★</div>
-        <div class="trait-name">DMG Cap</div>
-    </div>
-    <div class="trait-row swapable">
-        <div class="trait-swap">⇄</div>
-        <div class="trait-icon red">★</div>
-        <div class="trait-name">Break Assassin</div>
-    </div>
+<div>🛡 Imbued Traits</div>
+<div>
+    @for (slot of imbuedTraitSlots; track slot) {
+    <trait-select [label]="'Imbued Trait ' + (slot + 1)" [traitControl]="imbuedTraitControls[slot]"></trait-select>
+    }
 </div>
