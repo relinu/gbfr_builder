@@ -7,9 +7,6 @@
     @if (character; as char) {
     <div class="character-summary">
       <div class="entry-title">{{ char.name }}</div>
-      <div>Element: {{ char.element }}</div>
-      <div>HP: {{ char.HP }}</div>
-      <div>ATK: {{ char.ATK }}</div>
     </div>
     } @else {
     <div class="empty">No character selected.</div>
@@ -20,10 +17,8 @@
     <span class="section-header">Weapon</span>
     @if (weapon; as w) {
     <div class="weapon-summary">
-      <div class="entry-title">{{ w.longName }}</div>
+      <div class="entry-title">{{ w.name }}</div>
       <div>{{ w.series }}</div>
-      <div>ATK: {{ w.atk }}</div>
-      <div>HP: {{ w.hp }}</div>
     </div>
     } @else {
     <div class="empty">No weapon selected.</div>

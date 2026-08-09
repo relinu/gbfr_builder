@@ -46,9 +46,3 @@
     border: 1px solid var(--mat-sys-outline-variant);
     border-radius: 4px;
 }
-
-.trait-description {
-    color: var(--mat-sys-secondary);
-    font-size: 0.85rem;
-    margin-left: 2rem;
-}

@@ -5,6 +5,5 @@ export interface MasterTrait {
     charaID: string,
     style: MasterStyle,
     rank: number,
-    name: string,
     description: string,
 }

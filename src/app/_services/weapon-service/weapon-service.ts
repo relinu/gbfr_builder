@@ -9,7 +9,6 @@ export class WeaponService extends BaseDataService<Weapon> {
     }
 
     public getAllFor(characterId: string): Weapon[] {
-        console.log(this.getAll());
         return this.getAll().filter(w => w.charaID == characterId);
     }
 }
