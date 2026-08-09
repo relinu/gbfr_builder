@@ -8,10 +8,9 @@ const map: Map<String, Character> = new Map();
 
 _characters.forEach(c => {
     var id = Number(c.id);
-
-    if(id == 1)
+    if (id == 1)
         return;
-    else if(id > 0)
+    else if (id > 0)
         id -= 1;
 
     const mapped: Character = {
