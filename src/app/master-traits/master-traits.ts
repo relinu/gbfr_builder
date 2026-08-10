@@ -50,7 +50,11 @@ export class MasterTraits {
     return this.build.hasMasterTrait(traitId);
   }
 
-  public toggle(traitId: string, active: boolean): void {
+  public toggle(traitId: string, active?: boolean): void {
+    if (active == undefined) {
+      active = !this.isActive(traitId);
+    }
+
     this.build.toggleMasterTrait(traitId, active);
   }
 }

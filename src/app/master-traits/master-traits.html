@@ -18,7 +18,7 @@
 
                 <div class="trait-list">
                     @for (trait of group.traits; track trait.id) {
-                    <div class="trait-entry">
+                    <div class="trait-entry" (click)="toggle(trait.id)">
                         <mat-checkbox [checked]="isActive(trait.id)" (change)="toggle(trait.id, $event.checked)">
                             {{ trait.description }}
                         </mat-checkbox>

@@ -12,7 +12,6 @@
 }
 
 .style-content {
-    max-width: 750px;
     padding: 1.5rem 0.5rem;
 }
 
@@ -36,8 +35,8 @@
 }
 
 .trait-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 50% 50%;
     gap: 0.5rem;
 }
 
@@ -45,4 +44,5 @@
     padding: 0.5rem 0.75rem;
     border: 1px solid var(--mat-sys-outline-variant);
     border-radius: 4px;
+    cursor: pointer;
 }

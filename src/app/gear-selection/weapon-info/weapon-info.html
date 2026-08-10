@@ -1,4 +1,4 @@
-<mat-form-field class="weapon-select">
+<mat-form-field>
     <mat-label>Weapon</mat-label>
     <mat-select [formControl]="weaponControl">
         @for (w of availableWeapons; track w.id) {
@@ -7,20 +7,15 @@
     </mat-select>
 </mat-form-field>
 
-<div>{{ weapon?.series }}</div>
-
-<div>
-    <img width="220" height="220" [src]="weapon?.image">
-</div>
-
-<div>
+<div class="section-header">Weapon Traits</div>
+<div class="trait-list">
     @for (slot of weaponTraitSlots; track slot) {
     <trait-select [label]="'Trait ' + (slot + 1)" [traitControl]="weaponTraitControls[slot]"></trait-select>
     }
 </div>
 
-<div>🛡 Imbued Traits</div>
-<div>
+<div class="section-header">Imbued Traits</div>
+<div class="trait-list">
     @for (slot of imbuedTraitSlots; track slot) {
     <trait-select [label]="'Imbued Trait ' + (slot + 1)" [traitControl]="imbuedTraitControls[slot]"></trait-select>
     }

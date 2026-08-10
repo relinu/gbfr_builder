@@ -105,6 +105,32 @@ export class BuildContext {
             this._imbuedTraits[id] = value;
     }
 
+    public getBuildCode() {
+        const jsonBuild = JSON.stringify({
+            characterId: this._characterId,
+            weaponId: this._weaponId,
+            sigils: this._sigils,
+            skills: this._skills,
+            masterTraits: [...this._masterTraits.values()],
+            weaponTraits: this._weaponTraits,
+            imbuedTraits: this._imbuedTraits,
+        });
+
+        return btoa(jsonBuild);
+    }
+
+    public fromBuildCode(code: string) {
+        const jsonBuild = JSON.parse(atob(code));
+
+        this._characterId = jsonBuild.characterId;
+        this._weaponId = jsonBuild.weaponId;
+        this._sigils = jsonBuild.sigils;
+        this._skills = jsonBuild.skills;
+        this._masterTraits = new Set(jsonBuild.masterTraits);
+        this._weaponTraits = jsonBuild.weaponTraits;
+        this._imbuedTraits = jsonBuild.imbuedTraits;
+    }
+
     private resetCharacter() {
         this._sigils = Array<Sigil>(BuildContext.SIGIL_MAX_COUNT);
         this._skills = Array<string | undefined>(BuildContext.SKILL_MAX_COUNT);

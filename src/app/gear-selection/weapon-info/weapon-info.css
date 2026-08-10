@@ -1,3 +1,19 @@
-.weapon-select {
+mat-form-field, trait-select {
     width: 100%;
+}
+
+.trait-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.section-header {
+    font: var(--mat-sys-headline-small);
+    letter-spacing: var(--mat-sys-headline-small-tracking);
+    margin-bottom: 0.5rem;
+}
+
+.section-header:not(:first-child) {
+    margin-top: 0.5rem;
 }

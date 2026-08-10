@@ -1,6 +1,24 @@
+.left-col {
+    max-width: 750px;
+}
+
+.section-header {
+    font: var(--mat-sys-headline-small);
+    letter-spacing: var(--mat-sys-headline-small-tracking);
+    margin-bottom: 0.5rem;
+}
+
+.section-header:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
 .skill-list {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    max-width: 320px;
+    gap: 0.25rem;
+}
+
+mat-form-field {
+    width: 100%;
 }

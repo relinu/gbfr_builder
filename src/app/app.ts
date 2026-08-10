@@ -20,4 +20,11 @@ export class App {
     const currentCharacter = this.characterService.get(characterId);
     return currentCharacter?.name ?? '';
   }
+
+  public showBuildCode() {
+    const code = this.buildContext.getBuildCode();
+    console.log(code);
+
+    this.buildContext.fromBuildCode(code);
+  }
 }
